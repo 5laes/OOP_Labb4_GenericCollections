@@ -7,6 +7,7 @@
         public string _gender;
         public int _salary;
 
+        //en konstruktor för att skapa objekt av klassen
         public Employee(int id, string name, string gender, int salary)
         {
             _id = id;
@@ -15,6 +16,8 @@
             _salary = salary;
         }
 
+        //En override som overridear den basic "ToString()" metoden för att skriva ut 
+        //id, namn, kör och lön istället
         public override string ToString()
         {
             return $"id: {_id} - {_name} - {_gender} - {_salary}";
